@@ -37,6 +37,8 @@ jobs:
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+      - name: Setup Node.js environment
+      - uses: actions/setup-node@v3.4.1
 
   # Deployment job
   deploy:
